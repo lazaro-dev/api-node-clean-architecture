@@ -1,0 +1,22 @@
+{
+  "name": "api-node-clean-architecture",
+  "version": "1.0.0",
+  "description": "Api desenvolvida para estudos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazaro-dev/api-node-clean-architecture.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazaro-dev/api-node-clean-architecture/issues"
+  },
+  "homepage": "https://github.com/lazaro-dev/api-node-clean-architecture#readme",
+  "devDependencies": {
+    "standart": "^6.1.0"
+  }
+}
