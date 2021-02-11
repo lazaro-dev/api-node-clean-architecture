@@ -4,11 +4,27 @@
   "description": "Api desenvolvida para estudos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll",
+    "test:staged": "jest"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "npm run test:staged",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lazaro-dev/api-node-clean-architecture.git"
+  },
+  "standard": {
+    "env": ["jest"]
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +33,9 @@
   },
   "homepage": "https://github.com/lazaro-dev/api-node-clean-architecture#readme",
   "devDependencies": {
-    "standart": "^6.1.0"
+    "husky": "^5.0.9",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "standard": "^16.0.3"
   }
 }
